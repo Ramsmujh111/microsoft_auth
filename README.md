@@ -18,7 +18,7 @@ Please refer to: [Tutorial: Add identity providers to your applications in Azure
 1. Navigate to the [Azure portal](https://portal.azure.com) and select the **Azure AD B2C** service.
 1. Select the **App Registrations** blade on the left, then select **New registration**.
 1. In the **Register an application page** that appears, enter your application's registration information:
-   - In the **Name** section, enter a meaningful application name that will be displayed to users of the app, for example `msal-node-webapp`.
+   - In the **Name** section, enter a meaningful application name that will be displayed to users of the app, for example `microsoft-app`.
    - Under **Supported account types**, select **Accounts in any identity provider or organizational directory (for authenticating users with user flows)**.
    - In the **Redirect URI (optional)** section, select **Web** in the combo-box and enter the following redirect URI: `http://localhost:3000/auth/redirect`.
 1. Select **Register** to create the application.
@@ -41,7 +41,7 @@ Open the project in your IDE (like Visual Studio or Visual Studio Code) to confi
 1. Find the key `clientId` and replace the existing value with the application ID (clientId) of  app copied from the Azure portal.
 1. Find the key `tenantId` and replace the existing value with your Azure AD B2C tenant ID.
 1. Find the key `clientSecret` and replace the existing value with the key you saved during the creation of `msal-node-webapp` copied from the Azure portal.
-1. Find the key `redirect` and replace the existing value with the Redirect URI for `msal-node-webapp`. (by default `http://localhost:3000/auth/redirect`).
+1. Find the key `redirect` and replace the existing value with the Redirect URI for `microsoft-auth`. (by default `http://localhost:3000/auth/redirect`).
 
 > :information_source: For `redirect`, you can simply enter the path component of the URI instead of the full URI. For example, instead of `http://localhost:3000/auth/redirect`, you can simply enter `/redirect`. This may come in handy in deployment scenarios.
 
