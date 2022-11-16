@@ -31,13 +31,13 @@ Please refer to: [Tutorial: Add identity providers to your applications in Azure
    - The generated key value will be displayed when you select the **Add** button. Copy and save the generated value for use in later steps.
    - You'll need this key later in your code's configuration files. This key value will not be displayed again, and is not retrievable by any other means, so make sure to note it from the Azure portal before navigating to any other screen or blade.
 
-#### Configure the client app (msal-node-webapp) to use your app registration
+#### Configure the client app (microsoft-auth) to use your app registration
 
 Open the project in your IDE (like Visual Studio or Visual Studio Code) to configure the code.
 
 > In the steps below, "ClientID" is the same as "Application ID" or "AppId".
 
-1. Open the `App/appSettings.js` file.
+1. Open the `appSettings.js` file.
 1. Find the key `clientId` and replace the existing value with the application ID (clientId) of  app copied from the Azure portal.
 1. Find the key `tenantId` and replace the existing value with your Azure AD B2C tenant ID.
 1. Find the key `clientSecret` and replace the existing value with the key you saved during the creation of `msal-node-webapp` copied from the Azure portal.
